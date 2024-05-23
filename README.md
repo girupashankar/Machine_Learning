@@ -1,4 +1,5 @@
 # Machine_Learning
+Go with ChatGPT Notes: https://chatgpt.com/share/08d9bf4b-f983-413e-a739-5ca9cc931993
 Listing all machine learning algorithms is a challenging task due to the vast number of methods and the continuous development in the field. However, here is a comprehensive list of many well-known machine learning algorithms, categorized into different types:
 
 ### Supervised Learning Algorithms

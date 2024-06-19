@@ -164,80 +164,67 @@ Evaluation metrics in machine learning are critical tools that help assess the p
 
 ### Classification Metrics
 
-1. **Accuracy**: The ratio of correctly predicted instances to the total instances.
-   \[
-   \text{Accuracy} = \frac{TP + TN}{TP + TN + FP + FN}
-   \]
+1. **Accuracy**: The ratio of correctly predicted instances to the total instances.  
+   ![image](https://github.com/girupashankar/Machine_Learning/assets/164706869/fd295a38-3d5c-4afb-bc32-55906e7035c3)
    - **TP**: True Positives
    - **TN**: True Negatives
    - **FP**: False Positives
    - **FN**: False Negatives
 
-2. **Precision**: The ratio of true positive predictions to the total predicted positives.
-   \[
-   \text{Precision} = \frac{TP}{TP + FP}
-   \]
 
-3. **Recall (Sensitivity or True Positive Rate)**: The ratio of true positive predictions to the total actual positives.
-   \[
-   \text{Recall} = \frac{TP}{TP + FN}
-   \]
+2. **Precision**: The ratio of true positive predictions to the total predicted positives.  
+   ![image](https://github.com/girupashankar/Machine_Learning/assets/164706869/2affc25e-6bbe-4acd-a982-c8f5c7a64a2c)
 
-4. **F1 Score**: The harmonic mean of precision and recall.
-   \[
-   \text{F1 Score} = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}}
-   \]
 
-5. **Specificity (True Negative Rate)**: The ratio of true negative predictions to the total actual negatives.
-   \[
-   \text{Specificity} = \frac{TN}{TN + FP}
-   \]
+3. **Recall (Sensitivity or True Positive Rate)**: The ratio of true positive predictions to the total actual positives.  
+   ![image](https://github.com/girupashankar/Machine_Learning/assets/164706869/2b220ffa-5844-4395-ab97-b7a64921ff85)
+
+
+4. **F1 Score**: The harmonic mean of precision and recall.  
+   ![image](https://github.com/girupashankar/Machine_Learning/assets/164706869/7255e4b4-5201-4cdd-b74f-aeb2a1db7dd5)
+
+
+5. **Specificity (True Negative Rate)**: The ratio of true negative predictions to the total actual negatives.  
+   ![image](https://github.com/girupashankar/Machine_Learning/assets/164706869/f992f3b3-865f-4838-9dd4-00593459f210)
+
 
 6. **ROC Curve (Receiver Operating Characteristic Curve)**: A plot of the true positive rate (recall) against the false positive rate (1-specificity).
 
+ 
 7. **AUC (Area Under the ROC Curve)**: Represents the degree of separability between classes. A higher AUC indicates better performance.
 
-8. **Logarithmic Loss (Log Loss)**: Measures the performance of a classification model where the output is a probability value between 0 and 1.
-   \[
-   \text{Log Loss} = - \frac{1}{N} \sum_{i=1}^N \left[ y_i \log(p_i) + (1 - y_i) \log(1 - p_i) \right]
-   \]
+
+8. **Logarithmic Loss (Log Loss)**: Measures the performance of a classification model where the output is a probability value between 0 and 1.  
+   ![image](https://github.com/girupashankar/Machine_Learning/assets/164706869/ce5bde2b-df6d-4cd8-ab41-debe0e173484)
+
 
 9. **Confusion Matrix**: A table used to describe the performance of a classification model by displaying the true positives, false positives, true negatives, and false negatives.
 
 ### Regression Metrics
 
-1. **Mean Absolute Error (MAE)**: The average of the absolute differences between predicted and actual values.
-   \[
-   \text{MAE} = \frac{1}{N} \sum_{i=1}^N |y_i - \hat{y}_i|
-   \]
+1. **Mean Absolute Error (MAE)**: The average of the absolute differences between predicted and actual values.  
+   ![image](https://github.com/girupashankar/Machine_Learning/assets/164706869/0b30e7b5-7f2b-4fdb-af10-cfc02586ec36)
 
-2. **Mean Squared Error (MSE)**: The average of the squared differences between predicted and actual values.
-   \[
-   \text{MSE} = \frac{1}{N} \sum_{i=1}^N (y_i - \hat{y}_i)^2
-   \]
 
-3. **Root Mean Squared Error (RMSE)**: The square root of the mean squared error.
-   \[
-   \text{RMSE} = \sqrt{\frac{1}{N} \sum_{i=1}^N (y_i - \hat{y}_i)^2}
-   \]
+2. **Mean Squared Error (MSE)**: The average of the squared differences between predicted and actual values.  
+   ![image](https://github.com/girupashankar/Machine_Learning/assets/164706869/1217eb07-91ca-4e19-8863-ebe6bf9d1768)
+
+
+3. **Root Mean Squared Error (RMSE)**: The square root of the mean squared error.  
+   ![image](https://github.com/girupashankar/Machine_Learning/assets/164706869/6340f3d0-eb61-412a-9d60-5fd7f137f758)
+
 
 4. **R-squared (Coefficient of Determination)**: Indicates the proportion of the variance in the dependent variable that is predictable from the independent variables.
-   \[
-   R^2 = 1 - \frac{SS_{res}}{SS_{tot}}
-   \]
-   where \(SS_{res}\) is the sum of squares of residuals and \(SS_{tot}\) is the total sum of squares.
+   ![image](https://github.com/girupashankar/Machine_Learning/assets/164706869/79fc8513-2922-4b00-88d2-48895ef3fb96)
+   where SSres is the sum of squares of residuals and SStot is the total sum of squares.
 
-5. **Mean Absolute Percentage Error (MAPE)**: The average of the absolute percentage errors between predicted and actual values.
-   \[
-   \text{MAPE} = \frac{100\%}{N} \sum_{i=1}^N \left| \frac{y_i - \hat{y}_i}{y_i} \right|
-   \]
+5. **Mean Absolute Percentage Error (MAPE)**: The average of the absolute percentage errors between predicted and actual values.  
+   ![image](https://github.com/girupashankar/Machine_Learning/assets/164706869/2af222ed-d7da-45e2-bebb-48265db56310)
 
 ### Clustering Metrics
 
-1. **Silhouette Score**: Measures how similar an object is to its own cluster compared to other clusters. It ranges from -1 to 1.
-   \[
-   \text{Silhouette Score} = \frac{b - a}{\max(a, b)}
-   \]
+1. **Silhouette Score**: Measures how similar an object is to its own cluster compared to other clusters. It ranges from -1 to 1.  
+   ![image](https://github.com/girupashankar/Machine_Learning/assets/164706869/972d6b62-7d3d-4127-a80b-a765fbc7c374)
    where \(a\) is the mean intra-cluster distance and \(b\) is the mean nearest-cluster distance.
 
 2. **Adjusted Rand Index (ARI)**: Measures the similarity between two data clusterings by considering all pairs of samples and counting pairs that are assigned in the same or different clusters in the predicted and true clusterings.
@@ -248,26 +235,18 @@ Evaluation metrics in machine learning are critical tools that help assess the p
 
 ### Ranking Metrics
 
-1. **Mean Reciprocal Rank (MRR)**: The average of the reciprocal ranks of results for a sample of queries.
-   \[
-   \text{MRR} = \frac{1}{|Q|} \sum_{i=1}^{|Q|} \frac{1}{rank_i}
-   \]
+1. **Mean Reciprocal Rank (MRR)**: The average of the reciprocal ranks of results for a sample of queries.  
+   ![image](https://github.com/girupashankar/Machine_Learning/assets/164706869/52dffadf-1c28-4285-a9c1-e9e99df47692)
 
-2. **Normalized Discounted Cumulative Gain (NDCG)**: Measures the effectiveness of a ranking algorithm based on the graded relevance of the results.
-   \[
-   \text{NDCG} = \frac{DCG}{IDCG}
-   \]
-   where \(DCG\) is the discounted cumulative gain and \(IDCG\) is the ideal discounted cumulative gain.
+2. **Normalized Discounted Cumulative Gain (NDCG)**: Measures the effectiveness of a ranking algorithm based on the graded relevance of the results.  
+   ![image](https://github.com/girupashankar/Machine_Learning/assets/164706869/5385d351-844a-4c26-a443-71d862334776)
+   where DCG is the discounted cumulative gain and IDCG is the ideal discounted cumulative gain.
 
-3. **Precision at k (P@k)**: The proportion of relevant items in the top \(k\) retrieved items.
-   \[
-   \text{P@k} = \frac{\text{Number of relevant items in top } k}{k}
-   \]
+3. **Precision at k (P@k)**: The proportion of relevant items in the top \(k\) retrieved items.  
+  ![image](https://github.com/girupashankar/Machine_Learning/assets/164706869/bed565ab-e7ad-44ed-9215-1ac8ff89d1ae)
 
-4. **Mean Average Precision (MAP)**: The mean of average precision scores for a set of queries.
-   \[
-   \text{MAP} = \frac{1}{Q} \sum_{q=1}^Q \text{AP}(q)
-   \]
+4. **Mean Average Precision (MAP)**: The mean of average precision scores for a set of queries.  
+   ![image](https://github.com/girupashankar/Machine_Learning/assets/164706869/692a2731-4074-483f-8d1c-28a9c3cfe9e0)
 
 ### Summary
 
